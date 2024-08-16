@@ -1,7 +1,7 @@
 import random
 from colorama import Fore, Back, Style
 
-palavras = ['risao', 'exito', 'termo', 'babar', 'beber', 'choro', 'circo', 'cloro'].upper
+palavras = ['RISAO', 'EXITO', 'TERMO', 'BABAR', 'BEBER', 'CHORO', 'CIRCO', 'CLORO']
 resposta = random.choice(palavras) # Escolhe aleatoriamente uma palavra da lista, que será a reposta da rodada
 letras_da_resposta = [] # Lista que será usada para armazenar as letras da resposta da rodada
 for letra in resposta:
@@ -10,9 +10,9 @@ for letra in resposta:
 contador = 1
 while contador < 6:
     letras_da_palavra = [] # Lista que será usada para armazenar as letras da palavra digitada pelo usuário
-    palavra = input(f'{contador}° tentativa:  ').upper
+    palavra = input(f'{contador}° tentativa:  ').upper()
     while len(palavra) != 5:   # Enquanto a palavra for menor ou maior que 5 letras, a pergunta irá se repetir
-        palavra = input(f'{contador}° tentativa: ')
+        palavra = input(f'{contador}° tentativa: ').upper()
     for letra in palavra:
         letras_da_palavra.append(letra)
     for num in range (5):
@@ -29,10 +29,11 @@ while contador < 6:
     if palavra == resposta:
         break
 letras_da_resposta = []
+print('A resposta é:', resposta)
+
 
 # Fazer a interface gráfica;
 # Colocar mais palavras;
-# Permitir que o usuário digite as palavras em maiúsculo ou minúsculo;
 # Mostrar a palavra correta no final (caso o jogador perca);
 # Colocar o alfabeto indicando quais letras ainda não foram usadas;
 # Exibir a quantidade de tentativas no final:
