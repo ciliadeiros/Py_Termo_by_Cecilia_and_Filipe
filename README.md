@@ -12,7 +12,21 @@ print('\nP E D R', Back.GREEN + ' A',Style.RESET_ALL +' -->', Back.GREEN + ' A',
 print('\n______________________________________________________________________________________\n')
 
 
-palavras = ['CENHO','CLORO','SORTE','PERTO','CERTO','VOLTA','PINHA','VERDE','CAIXA','LERDO','TRENA','FILHA','LIMBO','ALUNO','ILHAS','FILHO','SENHA','NARIZ','PORTA','HEROI','PALCO','MISTO','FALSO','MARCO','DOIDO','LOUCO','CERCA','LIMPO','BARCO','RISAO','FAIXA','EXITO','FORTE','TRATO','PORTE','PAPEL','LIVRO','PARTO','BISPO','BABAR','LINHA','BEBER','CORTE','GENRO','CHORO','MENTE','MORTE','CIRCO','VISCO','VENTO']
+palavras = ['CENHO', 'CLORO', 'SORTE', 'PERTO', 'CERTO', 'VOLTA', 'PINHA', 'VERDE', 'CAIXA', 'LERDO',
+ 'TRENA', 'FILHA', 'LIMBO', 'ALUNO', 'ILHAS', 'FILHO', 'SENHA', 'NARIZ', 'PORTA', 'HEROI',
+ 'PALCO', 'MISTO', 'FALSO', 'MARCO', 'DOIDO', 'LOUCO', 'CERCA', 'LIMPO', 'BARCO', 'RISAO',
+ 'FAIXA', 'EXITO', 'FORTE', 'TRATO', 'PORTE', 'PAPEL', 'LIVRO', 'PARTO', 'BISPO', 'BABAR',
+ 'LINHA', 'BEBER', 'CORTE', 'GENRO', 'CHORO', 'MENTE', 'MORTE', 'CIRCO', 'VISCO', 'VENTO', 
+ 'LANCE', 'MOUSE', 'CAMPO', 'FOCAO', 'GOSTO', 'JUNTO', 'BOLSA', 'FRUTO', 'VALOR',
+ 'VIGOR', 'RAMPA', 'TROCO', 'MELAO', 'BATER', 'TOQUE', 'SALVA', 'GRATA', 'FICHA', 'NOBRE',
+ 'TIGRE', 'MONTE', 'PEIXE', 'PEDRA', 'RANHO', 'LAMPE', 'TELHA', 'REVES', 'MODAL', 'NOVOS',
+ 'MEXER', 'ROCHA', 'REGUA', 'BATOM', 'CRISE', 'BREJO', 'CREPE', 'VERAO', 'BREVE', 'TREVO',
+ 'PRAZO', 'VELHO', 'SOLAR', 'MANGO', 'NEVOA', 'VIOLA', 'PIZZA', 'CUBOZ', 'MANTO', 'PANDA',
+ 'CORVO', 'FOGAR', 'LIMAO', 'BRAVO', 'PESCA', 'COBRE', 'BERCO', 'JUNCO', 'TERNO', 'VALSA',
+ 'RUIDO', 'ROUBA', 'ZEBRA', 'TRUFA', 'FENIX', 'CANHA', 'LOUSA', 'TALHO', 'BORDA', 'TURNO',
+ 'DUBAI', 'TAPAS', 'TANGO', 'LOIRO', 'SONDA', 'TOURO', 'TUMBA', 'LUNAR', 'MARTE', 'FEIXE',
+ 'SERVO', 'RABOS', 'URANO', 'TERRA', 'SALTO', 'RUMOR', 'UNICO', 'LUZIA', 'TACOS', 'CRETA'
+]
 resposta = random.choice(palavras) # Escolhe aleatoriamente uma palavra da lista, que será a reposta da rodad
 letras_da_resposta = [] # Lista que será usada para armazenar as letras da resposta da rodada
 for letra in resposta:
@@ -47,6 +61,11 @@ while contador < 6:
     letras_da_palavra = []
     contador += 1
 
+letras_da_resposta = []
+print('A resposta é:', Back.LIGHTBLUE_EX + resposta, Style.RESET_ALL)
+print('Quantidade de tentativas:')
+for chave, valor in tentativas.items():
+    print(f'{chave} - {valor}')
 letras_da_resposta = []
 print('A resposta é:', Back.LIGHTBLUE_EX + resposta, Style.RESET_ALL)
 print('Quantidade de tentativas:')
