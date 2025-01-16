@@ -1,0 +1,1 @@
+Eu, Cecília Maria, e meu colega, Filipe Marcelino, desenvolvemos o jogo "Termo" na linguagem Python como projeto da disciplina técnica PEOO (Programação Estruturada e Orientada a Objetos) do curso de Informática para Internet do IFRN CA. 
